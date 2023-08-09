@@ -1,17 +1,28 @@
 @media screen and (max-width: 1023px) {
-  .top-section-container {
+  body {
+    width: 768px;
+  }
+  .top-section-container, 
+  .header, 
+  .navbar,
+  .content-wrapper
+   {
     width: 772px;
+  }
+  .top-section-container {
     height: 750px;
+  }
+
+  .top-bg-wrapper, .bg-wrapper-left {
+    height: 517px;
   }
 
   .top-bg-wrapper {
     width: 771px;
-    height: 517px;
   }
 
   .bg-wrapper-left {
     width: 666px;
-    height: 517px;
   }
 
   .bg-wrapper-right {
@@ -21,12 +32,10 @@
   }
 
   .header {
-    width: 772px;
     height: 86px;
   }
 
   .navbar {
-    width: 772px;
     height: 86px;
     }
 
@@ -100,7 +109,6 @@
   }
 
   .content-wrapper {
-    width: 772px;
     height: 664px;
     display: flex;
     flex-direction: row;
@@ -158,7 +166,6 @@
   }
 
   .key-benefits {
-    width: 768px;
     height: 859px;
     padding: 80px 0;
   }
@@ -175,7 +182,6 @@
   }
 
   .banner, .banner-content {
-    width: 768px;
     height: 609px;
     display: flex;
     align-items: center;
@@ -217,7 +223,6 @@
   }
 
   .why-front {
-    width: 768px;
     height: 354px;
   }
 
@@ -228,20 +233,17 @@
   }
 
   .list-wrapper {
-    width: 768px;
     height: 145px;
 
   }
 
-  .list-item {
+  .list-item, .circle-wrapper {
     width: 175px;
-    height: 145px;
   }
 
-  .circle-wrapper {
-    width: 175px;
-    height: 50px;
-  }
+  .list-item {height: 145px;}
+
+  .circle-wrapper {height: 50px;}
 
   .circle-wrapper span {
     width: 58.5px;
@@ -253,7 +255,6 @@
   }
 
   .banner-play-section {
-    width: 768px;
     height: 364px;
   }
 
@@ -268,7 +269,6 @@
   }
 
   .hubspot-section {
-    width: 768px;
     height: 852.18px;
     flex-direction: column;
     align-items: center;
@@ -282,7 +282,6 @@
 
   .right-part {
     display: flex;
-    width: 768px;
     height: 252.18px;
     padding: 0;
     flex-direction: column;
@@ -299,13 +298,11 @@
   }
 
   .brand-section {
-    width: 768px;
     height: 208px;
     padding: 40px 0;
   }
 
   .brand-section-title {
-    width: 768px;
     height: 24px;
   }
 
@@ -315,14 +312,12 @@
   }  
   
   .pricing-section {
-    width: 768px;
     height: 1013px;
   }
 
   .plan-features-list {
     flex-direction: column;
     align-items: center;
-    width: 768px;
     height: 833px;
   }
 
@@ -382,7 +377,6 @@
 
   .hire-us-section {
     flex-direction: column;
-    width: 768px;
     height: 924px;
   }
 
@@ -429,7 +423,6 @@
   }
 
   .hire-us-right{
-    width: 768px;
     height: 684px;
   }
 
@@ -464,7 +457,7 @@
   }
 
   .footer-section {
-    width: 768px;
+    margin: auto;
     height: 756px;
     padding: 80px 30px 40px 30px;
   }
@@ -472,7 +465,6 @@
   .footer-top {
     width: 708px;
     height: 381px;
-    margin:auto;
   }
 
   .footer-contact {
@@ -532,13 +524,19 @@
 }
 
 @media screen and (max-width:767px) {
-  .top-section-container {
+  .top-section-container, 
+  .header, 
+  .navbar,
+  .content-wrapper,
+  .banner-content,
+  .banner-left,
+  .banner-right
+  {
     width: 360px;
-    height: 705px;
   }
 
-  .top-bg-wrapper {
-    width: 360px;
+  .top-section-container {
+    height: 705px;
   }
 
   .bg-wrapper-left {
@@ -552,10 +550,6 @@
   }
 
   .header {
-    width: 360px;
-  }
-
-  .navbar {
     width: 360px;
   }
 
@@ -631,7 +625,6 @@
   }
 
   .content-wrapper {
-    width: 360px;
     height: 594px;
     display: flex;
     flex-direction: row;
@@ -695,16 +688,31 @@
     width: 328px;
   }
   
-  .banner, .banner-content {
+  .banner {
     width: 360px;
     height: 500px;
-    display: flex;
     align-items: center;
     padding: 0 16px 80px 16px;
   }
 
-  .banner-content {
+  .banner-content,
+  .banner-left, 
+  .banner-right,
+  .title-wrapper p,
+  .hubspot-test,
+  .plan-wrapper,
+   {
     width: 328px;
+  }
+
+  .banner-content,.banner-left  {
+    height: 470px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+
+  .banner-content {
     height: 470px;
     flex-direction: column;
     align-items: center;
@@ -712,13 +720,13 @@
   }
 
   .banner-left {
-    width: 328px;
     height: 252px;
     padding: 27px 30px;
     margin-bottom: 26px;
   }
 
   .banner-left-about {
+    margin: auto;
     width: 268px;
     height: 124px;
     margin-top: 26px;
@@ -731,7 +739,6 @@
   }
 
   .banner-right {
-    width: 328px;
     height: 209px;
     overflow:visible;
   }
@@ -740,14 +747,17 @@
     margin-top: 0;
   }
 
-  .why-front {
+  .why-front,
+  .why-front .title-wrapper {
     width: 360px;
+  }
+
+  .why-front {
     height: 488px;
     padding: 0 0 60px 0;
   }
 
   .why-front .title-wrapper {
-    width: 360px;
     height: 137px;
     padding: 0 16px;
   }
@@ -759,7 +769,6 @@
   }
 
   .title-wrapper p {
-    width: 328px;
     height: 96px;
     padding: 0 20px
   }
@@ -856,7 +865,6 @@
   }
 
   .hubspot-test {
-    width: 328px;
     height: 160px;
     text-align: center;
     padding: 0 16px;
