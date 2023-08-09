@@ -1,17 +1,7 @@
 :root {
   --white: #FFF;
   --black: #000;
-  --font-color-base: #666;
-  --font-color-dark: #212529;
-  --font-color-light: #b0aebe;
-  --font-color-link: #57A6FF;
-  --footer: #34314b;
-  --footer-base: #2e2b45;
-  --contrast: rgba(246, 248, 249, 0.8);
-  --success: #64ECF5;
-  --danger: #FF888D;
-  --grad-1: #a1ecff;
-  --grad-2: #7dbcff;
+  --font-color-link: #2476FF;
 
   --size-10: 0.625rem;
   --size-14: 0.875rem;
@@ -39,6 +29,8 @@ body {
   padding: 0;
 }
 
+div, a, p {font-weight: 500;}
+
 *,
 ::after, 
 ::before {
@@ -52,12 +44,27 @@ ul {
 }
 
 a { text-decoration: none; }
-p { margin-top: 0;}
+
+p { 
+    color: #677788;
+    margin-top: 0;
+  }
 
 h2 {
-  font-size: 1.75rem;
+  width: 334px;
+  font-size: 40px;
+  line-height: 48.41px;
   font-weight: 500;
-  line-height: 1.2;
+  margin: 40px 0 10px 0;
+  color:#000000
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31.47px;
 }
 
 img {
@@ -65,14 +72,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
   border-style: none;
-}
-
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .btn {
@@ -90,35 +89,24 @@ img {
 }
 
 .btn a {
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
-.btn-primary {
-  background-image: linear-gradient(90deg, var(--grad-1) 0%, var(--grad-2) 100%);
-  border: 1px solid var(--grad-1);
-  box-shadow: 0 10px 20px rgba(161, 236, 255, 0.5);
-  transition: ease-in-out 0.3.s;
-  color: var(--white);
-  padding: 0.4375rem 1.5625rem;
+.btn .fas {
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2476FF;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 50%;
 }
 
-.btn-white {
-  background-color: var(--white);
-  color: var(--font-color-link);
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.35);
-  padding: 0.475rem 1.75rem;
+.btn span {
+  padding: 10px;
+  color: white;
 }
 
-@media (min-width: 768px) {
-  .pricing-table, 
-  .testimonial-grid,
-  .footer-bottom-wrapper {max-width: 720px;}
-}
-
-@media (min-width: 992px) {
-  footer .container {max-width: 968px;}
-}
-
-@media (min-width: 1200px) {
-  .container {max-width: 1140px;}
-}
+.play-button-wrapper a{margin-left: 24px;}

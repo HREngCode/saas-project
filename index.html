@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <script
       src="https://kit.fontawesome.com/4802722549.js"
       crossorigin="anonymous"
@@ -29,7 +30,7 @@
         <div class="bg-wrapper-left"></div>
         <div class="bg-wrapper-right"></div>
       </div>
-      <header>
+      <div class="header">
         <nav id="topNav" class="navbar nav">
           <div class="container">
             <button
@@ -37,7 +38,8 @@
               aria-expanded="false"
               aria-controls="navbarDropdown"
             >
-              <span>&#9776;</span>
+              <span class="open">&#9776;</span>
+              <span class="close">&times;</span>
             </button>
             <a class="navbar-brand" href="logo"
               ><img src="/assets/project_logo/logo.svg" alt="Front Logo"
@@ -68,24 +70,22 @@
             </div>
           </div>
         </nav>
-      </header>
+      </div>
       <div class="content-wrapper">
         <div class="content-left">
           <div class="opening-wrapper">
-            <p class="opening-header">
+            <h2>
               Empowering <br />teams with the <br />
               freedom
-            </p>
-            <div class="tagline">
-              Own the unlimited power of web development
-            </div>
+            </h2>
+            <p class="tagline">Own the unlimited power of web development</p>
             <div class="play-button-wrapper">
               <div class="btn">
                 <i class="fas fa-play"></i
                 ><span class="btn-text">Play Video</span>
               </div>
               <div>
-                <a class="btn btn-white" href="#">Learn More</a>
+                <a class="learn-more" href="#">Learn More</a>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@
                 by the readable content of a page when looking at its layout.
               </p>
             </div>
-            <div class="benefit-card-link"><a href="#">Learn More</a></div>
+            <div class="learn-more"><a href="#">Learn More</a></div>
           </div>
         </div>
         <div class="benefit-card">
@@ -150,7 +150,7 @@
                 by the readable content of a page when looking at its layout.
               </p>
             </div>
-            <div class="benefit-card-link"><a href="#">Learn More</a></div>
+            <div class="learn-more"><a href="#">Learn More</a></div>
           </div>
         </div>
         <div class="benefit-card">
@@ -168,7 +168,7 @@
                 by the readable content of a page when looking at its layout.
               </p>
             </div>
-            <div class="benefit-card-link"><a href="#">Learn More</a></div>
+            <div class="learn-more"><a href="#">Learn More</a></div>
           </div>
         </div>
         <div class="benefit-card">
@@ -183,7 +183,7 @@
                 by the readable content of a page when looking at its layout.
               </p>
             </div>
-            <div class="benefit-card-link"><a href="#">Learn More</a></div>
+            <div class="learn-more"><a href="#">Learn More</a></div>
           </div>
         </div>
       </div>
@@ -196,8 +196,7 @@
           </div>
           <div class="play-button-wrapper">
             <div class="btn">
-              <i class="fas fa-play"></i
-              ><span class="btn-text">Play Video</span>
+              <i class="fas fa-play"></i><span>Play Video</span>
             </div>
           </div>
         </div>
@@ -282,40 +281,38 @@
           <div class="hubspot1">
             <img src="/assets/company_logos/hubspot.svg" alt="hubspot" />
           </div>
-          <div class="hubspot-test">
+          <p class="hubspot-test">
             The template is really nice and offers quite a large set of options.
             It's beautiful and the coding is done quickly and seamlessly. Thank
             you!
-          </div>
+          </p>
         </div>
         <div class="person-info">
           <div class="hubspot-name">Christina Kray</div>
-          <div class="hubspot-title">Executive Director</div>
+          <p class="hubspot-title">Executive Director</p>
         </div>
       </div>
     </div>
     <div class="brand-section">
-      <div class="brand-section-title">
-        <h3>TRUSTED BY WORLD'S BEST</h3>
-        <div class="brand-list">
-          <ul>
-            <li><img src="/assets/company_logos/weebly.svg" alt="weebly" /></li>
-            <li><img src="/assets/company_logos/uber.svg" alt="uber" /></li>
-            <li><img src="/assets/company_logos/slack.svg" alt="slack" /></li>
-            <li><img src="/assets/company_logos/airbnb.svg" alt="airbnb" /></li>
-            <li>
-              <img src="/assets/company_logos/spotify.svg" alt="spotify" />
-            </li>
-          </ul>
-        </div>
+      <div class="brand-section-title">TRUSTED BY WORLD'S BEST</div>
+      <div class="brand-list">
+        <ul>
+          <li><img src="/assets/company_logos/weebly.svg" alt="weebly" /></li>
+          <li><img src="/assets/company_logos/uber.svg" alt="uber" /></li>
+          <li><img src="/assets/company_logos/slack.svg" alt="slack" /></li>
+          <li><img src="/assets/company_logos/airbnb.svg" alt="airbnb" /></li>
+          <li>
+            <img src="/assets/company_logos/spotify.svg" alt="spotify" />
+          </li>
+        </ul>
       </div>
     </div>
     <div class="pricing-section">
-      <div class="pricing-header">
-        <div class="pricing-title">Pricing</div>
-        <div class="pricing-statement">
+      <div class="title-wrapper">
+        <h3>Pricing</h3>
+        <p class="pricing-statement">
           No additional costs. Pay for what you use
-        </div>
+        </p>
       </div>
       <div class="plan-features-list">
         <div class="plan-wrapper">
@@ -329,10 +326,10 @@
             </div>
 
             <hr />
-            <div class="plan-detail">
+            <p class="plan-detail">
               Start your Front business now. 100% guaranteed money back. No
               questions asked.
-            </div>
+            </p>
           </div>
           <div class="play-button-wrapper">
             <div class="btn">
@@ -340,7 +337,7 @@
               ><span class="btn-text">Play Video</span>
             </div>
           </div>
-          <div class="disclaimer">No credit card required</div>
+          <p class="disclaimer">No credit card required</p>
         </div>
         <div class="plan-features-wrapper">
           <div class="plan-row-one">
@@ -350,10 +347,10 @@
                   <img src="/assets/icons/components.svg" alt="components" />
                 </div>
                 <div class="item-title">Hundreds of components</div>
-                <div class="item-info">
+                <p class="item-info">
                   Achieve maximum productivity with minimum effort with Front
                   and create robust Limitless products.
-                </div>
+                </p>
               </div>
             </div>
             <div class="top-right-content">
@@ -362,10 +359,10 @@
                   <img src="/assets/icons/images.svg" alt="images" />
                 </div>
                 <div class="item-title">Images Included</div>
-                <div class="item-info">
+                <p class="item-info">
                   Images included We made custom license for all our premium
                   images in the front
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -378,9 +375,9 @@
                 <div class="item-title">
                   Cancel anytime<span class="sketch-icon">sketch</span>
                 </div>
-                <div class="item-info">
+                <p class="item-info">
                   If its not for you, just cancel, no hidden cots or fees.
-                </div>
+                </p>
               </div>
             </div>
             <div class="bottom-right-content">
@@ -389,9 +386,9 @@
                   <img src="/assets/icons/moneyback.svg" alt="moneyback" />
                 </div>
                 <div class="item-title">Money Back</div>
-                <div class="item-info">
+                <p class="item-info">
                   100% guaranteed money back. No questions asked.
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -402,9 +399,9 @@
       <div class="hire-us-left">
         <div class="hire-us-left-top">
           <div class="hire-us-title">Hire Us</div>
-          <div class="hire-us-opening">
+          <p class="hire-us-opening">
             Whatever your goal - <br />we will get you there
-          </div>
+          </p>
           <hr />
           <br />
           <div class="hire-us-phrase">
@@ -416,7 +413,7 @@
         <div class="hire-us-left-bottom">
           <div>
             <div class="left-person-name">Charlotte Moore</div>
-            <div class="left-person-title">Head of Commercials, Slack</div>
+            <p class="left-person-title">Head of Commercials, Slack</p>
           </div>
           <div class="hire-us-images">
             <div class="hire-us-image">
@@ -478,18 +475,17 @@
               <input type="checkbox" name="contact-me" id="contact-me" />
               <div class="checkbox-info">
                 <div class="checkbox-detail"></div>
-                Yes, I'd like to receive occasional marketing emails from Front.
-                I have the right to opt out at any time.
-
+                <p>
+                  Yes, I'd like to receive occasional marketing emails from
+                  Front. I have the right to opt out at any time.
+                </p>
                 <div class="privacy"><a href="#">View privacy policy</a></div>
               </div>
             </div>
           </div>
           <div class="get-started">
             <a href="#">
-              <div class="button-text">
-                Get Started
-              </div>
+              <div class="button-text">Get Started</div>
             </a>
           </div>
         </div>
@@ -517,11 +513,13 @@
             <h3>Company</h3>
             <div class="company">
               <ul>
-                <li>About</li>
-                <li>Career<span class="hiring">We're hiring</span></li>
-                <li>Blog</li>
-                <li>Customers</li>
-                <li>Hire us</li>
+                <li><a href="#">About</a></li>
+                <li>
+                  <a href="#">Career</a><span class="hiring">We're hiring</span>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Hire us</a></li>
               </ul>
             </div>
           </div>
@@ -529,10 +527,10 @@
             <h3>Features</h3>
             <div class="company">
               <ul>
-                <li>Press</li>
-                <li>Release Notes</li>
-                <li>Integrations</li>
-                <li>Pricing</li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Release Notes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Pricing</a></li>
               </ul>
             </div>
           </div>
@@ -540,11 +538,11 @@
             <h3>Documentation</h3>
             <div class="company">
               <ul>
-                <li>Support</li>
-                <li>Docs</li>
-                <li>Status</li>
-                <li>API Reference</li>
-                <li>Tech Requirements</li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">API Reference</a></li>
+                <li><a href="#">Tech Requirements</a></li>
               </ul>
             </div>
           </div>
@@ -558,7 +556,7 @@
                       class="fa-solid fa-circle-info"
                       style="color: #677788"
                     ></i></span
-                  >Help
+                  ><a href="#">Help</a>
                 </li>
                 <li>
                   <span
@@ -566,7 +564,7 @@
                       class="fa-solid fa-circle-user"
                       style="color: #677788"
                     ></i></span
-                  >Your Account
+                  ><a href="#">Your Account</a>
                 </li>
               </ul>
             </div>
@@ -619,15 +617,15 @@
           </div>
         </div>
         <div class="copyright-info">
-          <div class="copyright">
+          <p class="copyright">
             © Front. 2022 Responsive designs. All rights reserved.
-          </div>
-          <div class="copyright-disclaim">
+          </p>
+          <p class="copyright-disclaim">
             When you visit or interact with our sites, services or tools, we or
             our authorised service providers may use cookies for storing
             information to help provide you with a better, faster and safer
             experience and for marketing purposes.
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -635,14 +633,6 @@
       <i class="fa-solid fa-arrow-up"></i>
     </a>
     <script>
-      const nav = document.getElementById("topNav");
-      window.onscroll = function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add("sticky");
-        } else {
-          nav.classList.remove("sticky");
-        }
-      };
 
       const navButton = document.querySelector("button[aria-expanded]");
 
