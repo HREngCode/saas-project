@@ -1,6 +1,6 @@
 @media screen and (max-width: 1023px) {
   body {
-    width: 768px;
+    max-width: 768px;
   }
   .top-section-container, 
   .header, 
@@ -18,6 +18,7 @@
   }
 
   .top-bg-wrapper {
+    position: absolute;
     width: 771px;
   }
 
@@ -26,9 +27,10 @@
   }
 
   .bg-wrapper-right {
+    position: absolute;
+    left: 535px;
     width: 236px;
     height: 444.5px;
-    grid-column: 10/15;
   }
 
   .header {
@@ -457,7 +459,7 @@
   }
 
   .footer-section {
-    margin: auto;
+    width: 768px;
     height: 756px;
     padding: 80px 30px 40px 30px;
   }
@@ -490,7 +492,6 @@
   .footer-bottom {
     width: 708px;
     height: 174px;
-    margin: auto;
   }
 
   .bottom-header {
@@ -524,6 +525,10 @@
 }
 
 @media screen and (max-width:767px) {
+  body {
+    max-width: 360px;
+  }
+
   .top-section-container, 
   .header, 
   .navbar,
@@ -539,14 +544,19 @@
     height: 705px;
   }
 
+  .top-bg-wrapper {
+    width: 360px;
+  }
+
   .bg-wrapper-left {
     width: 312px;
   }
 
   .bg-wrapper-right {
+    position: absolute;
     width: 119.5px;
     height: 447px;
-    grid-column: 5/10;
+    left:242.5px;
   }
 
   .header {
@@ -700,8 +710,8 @@
   .banner-right,
   .title-wrapper p,
   .hubspot-test,
-  .plan-wrapper,
-   {
+  .plan-wrapper
+  {
     width: 328px;
   }
 
@@ -726,7 +736,6 @@
   }
 
   .banner-left-about {
-    margin: auto;
     width: 268px;
     height: 124px;
     margin-top: 26px;
@@ -815,8 +824,12 @@
   .banner-play-section {
     width: 360px;
     height: 197px;
-    margin: auto;
     padding: 0 0 20px 0;
+  }
+
+  .banner-frame {
+    width: 360px;
+    height: 197px;
   }
 
   .play-button {
@@ -832,7 +845,6 @@
   .hubspot-section {
     width: 360px;
     height: 698.18px;
-    margin: auto;
   }
 
   .left-part {

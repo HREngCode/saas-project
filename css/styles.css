@@ -3,7 +3,7 @@
 }
 
 .top-section-container, .key-benefits {
-  margin: auto;
+  /* margin: auto; */
 }
 .top-section-container, .top-bg-wrapper {
   display: grid;  
@@ -11,7 +11,7 @@
   height: 532px;
 }
 
-.top-bg-wrapper {grid-template-columns: repeat(18, 56.8896px);}
+/* .top-bg-wrapper {grid-template-columns: repeat(18, 55px);} */
 
 .bg-wrapper-left {
   background: linear-gradient(312.73deg, rgba(217, 217, 217, 0.44) 17.61%, rgba(217, 217, 217, 0) 55.85%);
@@ -19,16 +19,16 @@
   height: 517px;
   position: relative;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
 }
 
 .bg-wrapper-right {
+  position: absolute;
   background-color: #E1E7EF;
-  grid-column: 13/19;
   width: 316px;
   height: 443px;
-  left: 755.5px;
-  clip-path: polygon(54% 0%, 100% 0, 100% 94%, 10% 100%);
+  left: 711.5px;
+  clip-path: polygon(54% 0%, 100% 0, 100% 91%, 10% 98%);
 }
 
 .header, .navbar {
@@ -43,7 +43,7 @@
 }
 
 .navbar {
-  padding: 10px 30px 10px 10px;
+  padding: 10px;
   position: relative;
   display: grid;
   align-content: center;
@@ -54,11 +54,14 @@
   align-items: center;
   width: 471px;
   height: 57px;
-  padding: 6px 14px;.navbar .container {
+  padding: 6px 14px;
+}  
+
+.navbar .container {
   display: flex;
   align-items: center;
 }
-}
+
 
 .navbar-toggler {
   display: block;
@@ -322,7 +325,7 @@
 
 .banner {
   height: 550px;
-  margin: auto;
+  /* margin: auto; */
   padding: 0 30px 80px 30px;
 }
 
@@ -359,7 +362,7 @@
 }
 
 .why-front {
-  margin: auto;
+  /* margin: auto; */
   height: 354px;
   padding: 0px 0px 80px 0px;
 }
@@ -426,7 +429,7 @@
 }
 
 .banner-play-section {
-  margin: auto;
+  /* margin: auto; */
   height: 497px;
   padding: 0 30px 80px 30px;
 }
@@ -464,7 +467,7 @@
 .hubspot-section {
   display: flex;
   height: 560px;
-  margin: auto;
+  /* margin: auto; */
   gap:60px;
 }
 
@@ -549,7 +552,6 @@
 }
 
 .brand-section {
-  margin:auto;
   height: 208px;
   padding: 0 0 80px 0;
 }
@@ -578,7 +580,6 @@
 }
 
 .pricing-section {
-  margin:auto;
   height: 692px;
   padding: 0 0 120px 0;
 }
@@ -716,7 +717,7 @@ margin-left: 10px;
 
 .hire-us-section {
   display: flex;
-  margin: auto;
+  /* margin: auto; */
   height: 708px;
   background-color: #20335B;
 }
@@ -925,7 +926,7 @@ li .hiring,
 }
 
 .footer-section {
-  margin: auto;
+  /* margin: auto; */
   width: 1026px;
   height: 541px;
   padding: 80px 30px 40px 30px;
