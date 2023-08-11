@@ -2,6 +2,10 @@
   margin:0;
 }
 
+body {
+  margin: auto;
+}
+
 .top-section-container, .key-benefits {
   /* margin: auto; */
 }
