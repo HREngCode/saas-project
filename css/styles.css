@@ -15,6 +15,10 @@ body {
   height: 532px;
 }
 
+.top-bg-wrapper {
+  position: absolute;
+}
+
 /* .top-bg-wrapper {grid-template-columns: repeat(18, 55px);} */
 
 .bg-wrapper-left {
