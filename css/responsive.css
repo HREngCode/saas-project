@@ -71,9 +71,10 @@
 
   [aria-controls="navbarDropdown"] {
     display: block;
+    position: absolute;
   }
   
-  [aria-expanded="false"]~ .navbar-nav {
+  [aria-expanded="false"] ~ .navbar-nav {
     display: none;
   }
 
@@ -83,7 +84,6 @@
 
   [aria-expanded="true"] ~ .navbar-brand img {
     width: 154.9px;
-    z-index: 500;
   }
 
   [aria-expanded="true"] ~ .navbar-nav {

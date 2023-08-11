@@ -6,9 +6,10 @@ body {
   margin: auto;
 }
 
-.top-section-container, .key-benefits {
-  /* margin: auto; */
-}
+/* .top-section-container, .key-benefits {
+  margin: auto;
+} */
+
 .top-section-container, .top-bg-wrapper {
   display: grid;  
   width: 1028px;
@@ -301,6 +302,13 @@ body {
   border: 1px;
   padding: 20px;
   box-shadow: 0 10px 20px 0 #00000026;
+}
+
+.benefit-card:hover {
+background-color:#d4d1d1;
+width: 250px;
+height: 350px;
+color:white;
 }
 
 .benefit-card img {
