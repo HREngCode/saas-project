@@ -72,8 +72,10 @@ body {
 }
 
 
-.navbar-toggler {
+.navbar-toggler {  
   display: block;
+  position: absolute;
+  right: 20px;
   top: 10px;
   outline: none;
   background-color: transparent;
@@ -93,11 +95,6 @@ body {
   color: black;
   cursor: pointer;
   pointer-events: none;
-}
-
-.navbar-toggler, .open {
-  position: absolute;
-  right: 20px;
 }
 
 [aria-controls="navbarDropdown"] {
